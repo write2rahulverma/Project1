@@ -1,0 +1,47 @@
+<div class="jumbotron text-center">
+	<h1>Registration Page</h1>
+
+	<p>{{message}}</p>
+
+
+</div>
+
+<form data-ng-submit="registerUser()" ng-controller="registrationController" action="#regis">
+	<div>
+		<label>Username</label>
+		<div>Username:</div>
+		<input type="text" data-ng-model="user.username" placeholder="Username">
+	</div>
+	
+	<div>
+		<label>FirstName</label>
+		<div>First Name:</div>
+		<input type="text" data-ng-model="user.firstName" placeholder="First Name">
+	</div>
+	
+	<div>
+		<label>Last Name</label>
+		<div>Last Name:</div>
+		<input type="text" data-ng-model="user.lastName" placeholder="Last Name">
+	</div>
+	
+	<div>
+		<label>Email-Id</label>
+		<div>Email-Id:</div>
+		<input type="text" data-ng-model="user.emailId" placeholder="Email-Id">
+	</div>
+	
+	<div>
+		<label>Role</label>
+		<div>Role:</div>
+		<input type="text" data-ng-model="user.role" placeholder="Role">
+	</div>
+	
+	<div>
+		<label>Status</label>
+		<div>Status:</div>
+		<input type="text" data-ng-model="user.status" placeholder="Status">
+	</div>
+	
+	<button type="submit">Register</button>
+</form>
